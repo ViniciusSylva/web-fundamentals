@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="shortcut icon" href="img/simbolo-site-ico.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>PROJETO ODS</title>
+</head>
+<body>
+    <div id="topo"></div>
+
+    <header id="cabecalho">
+        <div class="logo_e_texto">
+            <img src="img/simbolo-site.png" alt="Logo do site">
+            <h1>CERRESKI</h1>
+        </div>
+
+        <nav class="navegacao_pagina">
+            <a href="#topo" class="link_escrita">Início</a>
+            <a href="#contato" class="link_escrita">Contato</a>
+            <a href="#calculos" class="link_escrita">Cálculo</a>
+        </nav>
+    </header>
+    
+    <main id="conteudo_principal" class="reveal">
+        <img src="img/image-tela-principal.png" alt="Primeira imagem de fundo">
+
+        <div id="itens_conteudo_principal">
+            <h1>Energia em números, impacto em consciência</h1>
+            <h2>Saiba quanto cada aparelho consome e quanto CO₂ isso representa para o planeta</h2>
+            <a href="#calculos">Calcular meu consumo</a>
+        </div>
+    </main>
+    
+    <div class="reveal">
+        <h2 class="titulo_com_linha">Aprenda mais sobre energia e sustentabilidade</h2>
+    </div>
+
+    <nav id="blocos_de_links" class="reveal">
+        <a href="link1.html" class="link_imagem" target="_blank">
+            <img src="img/imagem-tela-1.jpg" alt="">
+            <span>Do consumo às emissões</span>   
+        </a>
+
+        <a href="link2.html" class="link_imagem" target="_blank">
+            <img src="img/imagem-tela-2.jpg" alt="">
+            <span>Impacto do CO₂</span>
+        </a>
+
+        <a href="link3.html" class="link_imagem" target="_blank">
+            <img src="img/imagem-tela-3.jpg" alt="">
+            <span>Fontes renováveis</span>
+        </a>
+            
+        <a href="link4.html" class="link_imagem" target="_blank">
+            <img src="img/imagem-tela-4.jpg" alt="">
+            <span>Economize energia</span>
+        </a>
+    </nav>
+
+    <article id="bloco_do_texto" class="reveal">
+        <div class="texto">
+            <h2 id="ancora">O essencial sobre o CO₂</h2>
+            <p><span>O que é o CO₂</span> O dióxido de carbono (CO₂) é um gás natural presente na atmosfera. Ele é essencial para manter o calor do planeta, mas em excesso contribui para o aquecimento global.</p>
+
+            <p><span>Como o CO₂ é formado</span> O CO₂ é liberado principalmente pela queima de combustíveis fósseis como carvão, petróleo e gás natural usados para gerar energia, mover veículos e em processos industriais.</p>
+
+            <p><span>Como o CO₂ é calculado</span> Os emissões de CO₂ são calculadas com base no consumo de energia e no tipo de fonte usada. Cada kWh gerado por fontes não renováveis representa uma quantidade específica de CO₂ liberada na atmosfera.</p>
+
+            <p><span>Impactos do CO₂</span> O aumento do CO₂ intensifica o efeito estufa, elevando a temperatura média da Terra. Isso causa desequilíbrios climáticos, derretimento de geleiras e eventos extremos mais frequentes.</p>
+        </div>
+
+        <div class="imagem_do_texto">
+            <img src="img/imagem-com-texto.jpg" alt="Imagem ao lado do texto">
+        </div>
+    </article>
+
+    <div class="borda_do_calculo">
+        <h1 id="calculos">Calculadora de Consumo de Energia</h1>
+        <div class="layout">
+            <!-- ÁREA DA ESQUERDA -->
+            <div class="form-area">
+                <h2>Adicionar Aparelho</h2>
+                <label>Nome do aparelho:</label>
+                <input type="text" id="nome" placeholder="Ex: Geladeira">
+                <label>Quantidade:</label>
+                <input type="number" id="quantidade" placeholder="Ex: 2">
+                <label>Consumo por hora (kWh):</label>
+                <input type="number" id="consumo" placeholder="Ex: 0.2" step="0.01">
+                <label>Horas ligadas por dia:</label>
+                <input type="number" id="horas" placeholder="Ex: 8">
+                <button onclick="adicionarAparelho()">Adicionar</button>
+            </div>
+            <!-- ÁREA DA DIREITA -->
+            <div class="table-area">
+                <h2>Aparelhos Inseridos</h2>
+                <table id="tabela">
+                <thead>
+                    <tr>
+                    <th>Aparelho</th>
+                    <th>Qtd</th>
+                    <th>kWh/h</th>
+                    <th>Horas/dia</th>
+                    <th>Consumo Diário</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                </table>
+                <button onclick="calcularConsumo()">Calcular Consumo</button>
+                <div id="resultado" class="total"></div>
+                <div id="co2" class="total"></div>
+                <div id="arvore" class="total"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reveal">
+        <h2 class="titulo_com_linha">Aprenda Sobre Consumo e CO₂</h2>
+    </div>
+
+    <article class="dicas">
+
+    <div class="card">
+        <div class="circle">
+            <img src="img/icone-arvore.jpg" alt="Foto 1">
+        </div>
+        <h3>Conversor de CO2 para Árvores</h3>
+        <p>Em média, uma árvore absorve cerca de 60 gramas de CO₂ por dia. <br> Vale lembra que o fator de emissão da eletricidade no Brasil, a média é: 0,10 kg de CO₂ por kWh</p>
+    </div>
+
+    <div class="card">
+        <div class="circle">
+            <img src="img/icone-lampada.jpg" alt="Foto 2">
+        </div>
+        <h3>Comparação Entre Aparelhos</h3>
+        <p>Aparelhos modernos consomem 30% a 60% menos energia que os antigos. Modelos antigos podem gastar o dobro para fazer a mesma função.</p>
+    </div>
+
+    <div class="card">
+        <div class="circle">
+            <img src="img/icone-painel.jpg" alt="Foto 3">
+        </div>
+        <h3>Energia Renovável</h3>
+        <p>Fontes renováveis como solar e eólica produzem energia limpa, reduzindo o uso de combustíveis fósseis e as emissões de CO₂.</p>
+    </div>
+
+    <div class="card">
+        <div class="circle">
+            <img src="img/icone-pc.jpg" alt="Foto 4">
+        </div>
+        <h3>Média de kWh em Aparelhos</h3>
+        <p>Geladeira: 0,04 a 0,07 kWh/h <br>
+        Ar-condicionado: 1,2 a 1,5 kWh/h <br>
+        Computador: 0,2 a 0,3 kWh/h <br>
+        Televisão LED: 0,07 a 0,15 kWh/h</p>
+    </div>
+
+    <div class="card">
+        <div class="circle">
+            <img src="img/icone-raio.jpg" alt="Foto 5">
+        </div>
+        <h3>Média de Preço da Energia Elétrica</h3>
+        <p>A tarifa média residencial de energia elétrica no Brasil para 2025 está projetada em cerca de R$ 0,77 por kWh (ou R$ 772/MWh).</p>
+    </div>
+
+    <div class="card">
+        <div class="circle">
+            <img src="img/icone-regua.jpg" alt="Foto 5">
+        </div>
+        <h3>Calculadora de Emissões</h3>
+        <p>A emissão de CO₂ é calculada multiplicando o consumo de energia pelo fator de emissão. A fórmula é: CO₂ = kWh consumidos × fator de emissão.</p>
+    </div>
+
+    </article>
+
+    <section id="foto_parallax"></section>
+
+    <div class="reveal">
+        <h2 class="titulo_com_linha">CONTATO</h2>
+    </div>
+
+    <section id="contato" class="reveal">
+        <div class="formulario">
+            <input type="text" id="seuNome" name="nome" placeholder="Nome">
+            <br>
+
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+            <br>
+
+            <input type="email" id="email" name="email" placeholder="Endereço de e-mail">
+            <br>
+
+            <button type="button">Fale conosco</button>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        <div class="icones">
+            <a href="https://api.whatsapp.com/send?phone=5549998139475&text=Vinicius+Silva" class="logo" target="_blank">
+                <img src="img/logo-whatssap.png" alt="Logo do whatsapp">
+            </a>
+            <a href="https://www.instagram.com/viny.silva/" class="logo" target="_blank">
+                <img src="img/logo-instagram.png" alt="Logo do imagem-logo-instagram">
+            </a>
+            <a href="https://github.com/ViniciusSylva" class="logo" target="_blank">
+                <img src="img/logo-github-2.png" alt="Logo do github">
+            </a>
+        </div>
+
+        <p>
+            <a href="#topo">Ínicio </a> | 
+            <a href="#calculos"> Jornada </a> | 
+            <a href="#ancora"> Sobre </a> | 
+            <a href="#contato"> Contato </a>
+        </p>
+        <p>Criado por Vinicius Silva para projeto da faculdade</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

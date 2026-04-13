@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: rgb(0, 0, 66);
+            margin: 0px;
+        }
+
+        header {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: blue;
+
+        }
+
+        article > aside {
+            background-color: rgb(0, 94, 255);
+            padding: 3px;
+            margin: 3px
+        }
+
+        nav {
+            background-color: blue;
+            padding: 3px;
+           box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.416);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        
+        footer {
+            background-color: rgb(0, 65, 65);
+            padding: 1px;
+            color: white;
+            text-align: center;
+            margin: 0px;
+        }
+
+        aside > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+            <a href="#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notícias">
+            <p>Viny é profissional em tudo</p>
+        </section>
+        <section id="assuntos">
+            <article>
+                <h2>Nóticia Mil Grau</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque facilis, libero voluptatem, neque iusto aliquam est doloremque dignissimos illum voluptates perferendis dolore eveniet! Provident mollitia necessitatibus earum, sed minus vitae?
+                </p>
+                <aside>
+                    <p>Artigro escrito pelo Viny do Mal</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Viny Malvadeza</p>
+    </footer>
+
+</body>
+</html>
