@@ -1,51 +1,67 @@
-# 📚 Curso de HTML5 e CSS3 - Curso em Vídeo
+# 🌐 HTML & CSS Fundamentals
 
-Repositório com meus estudos e projetos desenvolvidos durante o curso de HTML5 e CSS3 do Curso em Vídeo, ministrado pelo professor Gustavo Guanabara.
+## 🚀 About
 
-## 📖 Conteúdo Estudado
-
-### 📌 HTML5
-- Estrutura básica de um documento HTML
-- Tags semânticas
-- Hierarquia de títulos
-- Listas (ordenadas e não ordenadas)
-- Links internos e externos
-- Imagens
-- Áudio e vídeo
-- Tabelas
-- Formulários
-- Iframes
-
-### 🎨 CSS3
-- Seletores
-- Cores e unidades de medida
-- Box Model
-- Tipografia
-- Pseudo-classes e pseudo-elementos
-- Variáveis CSS
-- Responsividade
-- Media Queries
-- Flexbox
-- Introdução ao Grid Layout
-
-## 🚀 Projetos Desenvolvidos
-
-- Site básico em HTML
-- Site com estilização completa em CSS
-- Projeto Android
-- Projeto Cordel Moderno
-- Projeto Portfólio
-- Projetos responsivos
-
-## 🛠 Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-
-## 📌 Objetivo
-
-Consolidar os fundamentos da criação e estilização de páginas web modernas e responsivas.
+This repository contains studies and projects developed while learning **HTML5 and CSS3**, focusing on building modern and responsive web pages.
 
 ---
 
-> 🚀 Repositório focado em aprendizado e evolução constante.
+## 📖 Topics Covered
+
+### 📌 HTML5
+
+* Basic document structure
+* Semantic tags
+* Heading hierarchy
+* Lists (ordered and unordered)
+* Internal and external links
+* Images
+* Audio and video
+* Tables
+* Forms
+* Iframes
+
+---
+
+### 🎨 CSS3
+
+* Selectors
+* Colors and units
+* Box Model
+* Typography
+* Pseudo-classes and pseudo-elements
+* CSS variables
+* Responsiveness
+* Media Queries
+* Flexbox
+* Introduction to Grid Layout
+
+---
+
+## 🚀 Projects
+
+* Basic HTML website
+* Fully styled website with CSS
+* Android project
+* Cordel Moderno project
+* Portfolio project
+* Responsive projects
+
+---
+
+## 🛠 Technologies
+
+* HTML5
+* CSS3
+
+---
+
+## 📌 Purpose
+
+To strengthen the fundamentals of building and styling modern, responsive web pages.
+
+---
+
+## 📈 Status
+
+📚 Focused on continuous learning and improvement.
